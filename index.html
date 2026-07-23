@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Alexandre Mevel · Software Engineer · Cybersecurity & CTF enthousiast</title>
+<meta name="description" content="Alexandre Mevel, junior software engineer specialising in cybersecurity, network, binary exploitation & web vulnerabilities" />
+<link rel="icon" href="icon.svg" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand"><img src="icon.svg" class="nav-logo" alt="logo">Alexandre<span class="muted">.dev</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about"><span class="hash">#</span>about</a>
+      <a href="#skills"><span class="hash">#</span>skills</a>
+      <a href="#work"><span class="hash">#</span>work</a>
+      <a href="#experience"><span class="hash">#</span>experience</a>
+      <a href="#education"><span class="hash">#</span>education</a>
+      <a href="#contact"><span class="hash">#</span>contact</a>
+    </div>
+    <div class="nav-cta">
+      <a class="icon-btn" href="https://github.com/Pandrah" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></svg>
+      </a>
+      <a class="btn btn-primary" href="#contact">Get in touch</a>
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero wrap" id="top">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <span class="status-chip reveal"><span class="pulse"></span>Available for 2026 · open to opportunities</span>
+      <h1 class="reveal d1">Alexandre<span class="lastname accent-grad">Mevel</span></h1>
+      <p class="role reveal d2">Security & Software Engineer <br><b>·</b><br>Network Analysis - Web exploitation - Binary reversing - Software development</p>
+      <p class="lede reveal d2">Security engineer</p>
+      <div class="hero-cta reveal d3"> 
+        <a class="btn btn-primary" href="#work">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+          View my work
+        </a>
+        <a class="btn" href="https://github.com/Pahdrah" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></svg>
+          GitHub
+        </a>
+      </div>
+      <div class="hero-meta reveal d4">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>Bretagne, France</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>M.Sc. Cybersecurity</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>C++ · Python · C · Golang</span>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal d2">
+      <div class="code-window">
+        <div class="titlebar">
+          <span class="lights"><i></i><i></i><i></i></span>
+          <span class="filename">console</span>
+        </div>
+	    <pre style="box-sizing: unset">
+		<code>
+			<span class="tok-c">Nmap scan report for devhub.htb (10.129.9.49)
+			Host is up, received user-set.</span>
+			PORT     STATE    SERVICE REASON      VERSION
+			<span class="tok-f">22</span>/<span class="tok-k">tcp</span>   <span class="orange">ssh</span>       no-response     <span class="green">    OpenSSH 10.0p2 Ubuntu 5ubuntu5.4</span>
+			<span class="tok-f">80</span>/<span class="tok-k">tcp</span>   <span class="orange">http</span>      no-response     <span class="green">    nginx 1.28.0 (Ubuntu)</span>
+
+			Service detection performed.
+
+			<span class="red">root</span>@<span class="velvet">kali</span># <i class="pink">msfconsole</i>
+			<p>
+			
+                                   .,,.                  .
+                                .\$$$$$L..,,==aaccaacc%#s$b.       d8,    d8P
+                     d8P        #$$$$$$$$$$$$$$$$$$$$$$$$$$$b.    `BP  d888888p
+                  d888888P      '7$$$$\""""''^^`` .7$$$|D*"'```         ?88'
+  d8bd8b.d8p d8888b ?88' d888b8b            _.os#$|8*"`   d8P       ?8b  88P
+  88P`?P'?P d8b_,dP 88P d8P' ?88       .oaS###S*"`       d8P d8888b $whi?88b 88b
+ d88  d8 ?8 88b     88b 88b  ,88b .osS$$$$*" ?88,.d88b, d88 d8P' ?88 88P `?8b
+d88' d88b 8b`?8888P'`?8b`?88P'.aS$$$$Q*"`    `?88'  ?88 ?88 88b  d88 d88
+                          .a#$$$$$$"`          88b  d8P  88b`?8888P'
+                       ,s$$$$$$$"`             888888P'   88n      _.,,,ass;:
+                    .a$$$$$$$P`               d88P'    .,.ass%#S$$$$$$$$$$$$$$'
+                 .a$###$$$P`           _.,,-aqsc#SS$$$$$$$$$$$$$$$$$$$$$$$$$$'
+              ,a$$###$$P`  _.,-ass#S$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$####SSSS'
+           .a$$$$$$$$$$SSS$$$$$$$$$$$$$$$$$$$$$$$$$$$$SS##==--""''^^/$$$$$$'
+_______________________________________________________________   ,&$$$$$$'_____
+                                                                 ll&&$$$$'
+                                                              .;;lll&&&&'
+                                                            ...;;lllll&'
+                                                          ......;;;llll;;;....
+                                                           ` ......;;;;... .  .
+msf> SeArChInG fOr ExPlOiTs  . . . 
+			</p>
+		</code>
+	   </pre>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="section wrap" id="about">
+  <div class="about-grid">
+    <div class="about-bio reveal">
+      <span class="eyebrow"><span class="slashes">//</span>About</span>
+      <h2 style="font-size:clamp(1.9rem,4vw,2.8rem);font-weight:700;letter-spacing:-0.02em;margin:14px 0 24px;line-height:1.08;">Developping next generation <span class="accent-grad">exploitation tools</span>.</h2>
+      <p>I'm a junior software and cybersecurity engineer from Bretagne, France, with <strong>double degree in Cybersecurity</strong>: an engineering degree at ENIB and a Master's at the Université du Québec à Chicoutimi.</p>
+      <p>My work spans <strong>custom Software developpment</strong> for red-teaming purposes. <strong>Cloud application deployment</strong> and <strong>high-performance data reporting</strong> with metrics and effective Dashboards</p>
+      <p><i>"Security used to be an inconvenience sometimes, but now it’s a necessity all the time."</i></p>
+    </div>
+    <div class="about-side reveal d2">
+      <div class="stats">
+        <div class="stat"><div class="num">2</div><div class="label">// internships</div></div>
+        <div class="stat"><div class="num">2</div><div class="label">// public repos</div></div>
+        <div class="stat"><div class="num">2</div><div class="label">// Engineering and cybersecurity degrees</div></div>
+        <div class="stat"><div class="num">4</div><div class="label">// spoken languages</div></div>
+      </div>
+      <div class="terminal">
+        <div class="titlebar">
+          <span class="lights"><i></i><i></i><i></i></span>
+          <span class="tlabel">zsh · Alexandre@dev</span>
+        </div>
+        <pre><span class="pr">$</span> <span class="cmd">whoami</span>
+<span class="out">&gt; Alexandre_Mevel</span>
+
+<span class="pr">$</span> <span class="cmd">cat focus.txt</span>
+<span class="out">intrusion · persistence · evasion · pivot</span>
+<span class="out">aiming for excellency</span>
+
+<span class="pr">$</span> <span class="cmd">echo $STATUS</span>
+<span class="gn">&gt; building &amp; shipping</span> <span class="cursor"></span></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section class="section wrap" id="skills">
+  <div class="section-head reveal">
+    <span class="eyebrow"><span class="slashes">//</span>Skills</span>
+    <h2>Tech Stack</h2>
+    <p>The tools I work with daily. I currently use Neovim as a text editor</p>
+  </div>
+  <div class="skills-grid" id="skillsGrid">
+	<!-- CAROUSEL HERE -->
+
+	<!-- Languages -->
+	<div class="skill-card reveal in">
+	   <div class="before-card reveal in" id="languages">
+
+		<div class="head">
+			<span class="ic">
+				<svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+					<polyline points="16 18 22 12 16 6"></polyline>
+					<polyline points="8 6 2 12 8 18"></polyline>
+				</svg>
+			</span>
+			<h3>Languages</h3>
+		</div>
+		<div class="skill-rows">
+
+			<!-- SHELL -->
+			<a class="skill-row has-link lvl-expert" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">S</span>
+						<img src="https://cdn.simpleicons.org/gnubash/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name"># Shell </span>
+					<span class="sk-level">expert</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="95" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- PYTHON -->
+			<a class="skill-row has-link lvl-expert" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">P</span>
+						<img src="https://cdn.simpleicons.org/python/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">Python</span>
+					<span class="sk-level">Expert</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="95" style="width: 65%;"></div>
+				</div>
+			</a>
+
+			<!-- C++ -->
+			<a class="skill-row has-link lvl-proficient" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">C</span>
+						<img src="https://cdn.simpleicons.org/c++/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">C/C++</span>
+					<span class="sk-level">Proficent</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- SQL -->
+			<a class="skill-row has-link lvl-proficient" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">S</span>
+						<img src="https://cdn.simpleicons.org/sqlite/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">SQL</span>
+					<span class="sk-level">Proficent</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- GOLANG -->
+			<a class="skill-row has-link lvl-proficient" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">G</span>
+						<img src="https://cdn.simpleicons.org/c++/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">Golang</span>
+					<span class="sk-level">Proficient</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- HTML/JS/CSS -->
+			<a class="skill-row has-link lvl-proficient" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">H</span>
+						<img src="https://cdn.simpleicons.org/html5/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">HTML / JS / CSS</span>
+					<span class="sk-level">Proficent</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- PHP -->
+			<a class="skill-row has-link lvl-intermediate" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">P</span>
+						<img src="https://cdn.simpleicons.org/php/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">PHP</span>
+					<span class="sk-level">Intermediate</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="50" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+		</div>
+
+	   </div>
+	</div>
+
+	<!-- DevOps -->
+	<div class="skill-card 	reveal in">
+	  <div class="before-card reveal in" id="devops">
+		<div class="head">
+			<span class="ic">
+				<span class="material-symbols-outlined">
+				terminal
+				</span>
+
+			</span>
+			<h3>DevOps</h3>
+		</div>
+		<div class="skill-rows">
+
+			<!-- GIT -->
+			<a class="skill-row has-link lvl-proficient" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">G</span>
+						<img src="https://cdn.simpleicons.org/git/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">Github</span>
+					<span class="sk-level">Proficent</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- JIRA -->
+			<a class="skill-row has-link lvl-learning" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">J</span>
+						<img src="https://cdn.simpleicons.org/jira/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">Jira</span>
+					<span class="sk-level">Learning</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="25" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- JENKINS -->
+			<a class="skill-row has-link lvl-learning" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">J</span>
+						<img src="https://cdn.simpleicons.org/jenkins/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">Jenkins</span>
+					<span class="sk-level">Learning</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="25" style="width: 65%;"></div>
+				</div>
+
+			</a>
+		</div>
+	  </div>
+	</div>
+
+	<!-- Cloud -->
+	<div class="skill-card reveal in">
+	  <div class="before-card reveal in" id="cloud">
+		<div class="head">
+			<span class="ic">
+				<span class="material-symbols-outlined">
+				cloud
+				</span>
+			</span>
+			<h3>Cloud</h3>
+		</div>
+		<div class="skill-rows">
+
+			<!-- DOCKER -->
+			<a class="skill-row has-link lvl-proficient" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">D</span>
+						<img src="https://cdn.simpleicons.org/docker/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">Docker</span>
+					<span class="sk-level">Proficent</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- WORDPRESS -->
+			<a class="skill-row has-link lvl-proficient" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">W</span>
+						<img src="https://cdn.simpleicons.org/wordpress/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">Wordpress</span>
+					<span class="sk-level">Proficient</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- KUBERNETES -->
+			<a class="skill-row has-link lvl-intermediate" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">K</span>
+						<img src="https://cdn.simpleicons.org/kubernetes/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">Kubernetes</span>
+					<span class="sk-level">Intermediate</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="50" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- AWS -->
+			<a class="skill-row has-link lvl-learning" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">A</span>
+						<img src="https://cdn.simpleicons.org/aws/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">AWS</span>
+					<span class="sk-level">Learning</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="25" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+		</div>
+	  </div>
+	</div>
+
+	<!-- Environments -->
+	<div class="skill-card reveal in">
+	  <div class="before-card reveal in" id="environments">
+		<div class="head">
+			<span class="ic">
+				<span class="material-symbols-outlined">
+				computer
+				</span>
+			</span>
+			<h3>Environnement</h3>
+		</div>
+		<div class="skill-rows">
+			<!--	LINUX	-->
+			<a class="skill-row has-link lvl-expert" href="#work" rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">L</span>
+						<img src="https://cdn.simpleicons.org/linux/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">Linux</span>
+					<span class="sk-level">Expert</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="95" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!--	WINDOWS	-->
+			<a class="skill-row has-link lvl-intermediate" href="#work" rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<!-- <span class="mono">W</span> -->
+						<img src="https://cdn.simpleicons.org/windows/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+						<span class="material-symbols-outlined">
+						window
+						</span>
+					</span>
+					<span class="sk-name">Windows</span>
+					<span class="sk-level">Intermediate</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="50" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!--	ACTIVE DIRECTORY	-->
+			<a class="skill-row has-link lvl-learning" href="#work" rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<!-- <span class="mono">W</span> -->
+						<!-- <img src="https://cdn.simpleicons.org/windows/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" > -->
+						<span class="material-symbols-outlined">
+						server_person
+						</span>
+					</span>
+					<span class="sk-name">Active Directory</span>
+					<span class="sk-level">Learning</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="25" style="width: 65%;"></div>
+				</div>
+
+			</a>
+		</div>
+	  </div>
+	</div>
+
+	<!-- Network -->
+	<div class="skill-card reveal in">
+	  <div class="before-card reveal in" id="network">
+		<div class="head">
+			<span class="ic">
+				<span class="material-symbols-outlined">
+				language
+				</span>
+			</span>
+			<h3>Network</h3>
+		</div>
+		<div class="skill-rows">
+
+			<!-- HTTP -->
+			<a class="skill-row has-link lvl-proficient" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<!-- <span class="mono">H</span> -->
+						<img src="https://cdn.simpleicons.org/http/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+						<span class="material-symbols-outlined">
+						http
+						</span>
+					</span>
+					<span class="sk-name">HTTP</span>
+					<span class="sk-level">Proficent</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- IP -->
+			<a class="skill-row has-link lvl-proficient" href="#work" rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<!-- <span class="mono">I</span> -->
+						<img src="https://cdn.simpleicons.org/ip/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+						<span class="material-symbols-outlined">
+						router
+						</span>
+					</span>
+					<span class="sk-name">IP</span>
+					<span class="sk-level">Proficent</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- TCP / UDP -->
+			<a class="skill-row has-link lvl-intermediate" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<!-- <span class="mono">T</span> -->
+						<img src="https://cdn.simpleicons.org/tcp/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+						<span class="material-symbols-outlined">
+						package_2
+						</span>
+					</span>
+					<span class="sk-name">TCP / UDP</span>
+					<span class="sk-level">Intermediate</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="50" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- DNS -->
+			<a class="skill-row has-link lvl-intermediate" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<!-- <span class="mono">D</span> -->
+						<img src="https://cdn.simpleicons.org/dns/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+						<span class="material-symbols-outlined">
+						dns
+						</span>
+					</span>
+					<span class="sk-name">DNS</span>
+					<span class="sk-level">Intermediate</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="50" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- SMB -->
+			<a class="skill-row has-link lvl-intermediate" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<!-- <span class="mono">S</span> -->
+						<img src="https://cdn.simpleicons.org/smb/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+						<span class="material-symbols-outlined">
+						smb_share
+						</span>
+					</span>
+					<span class="sk-name">SMB</span>
+					<span class="sk-level">Intermediate</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="50" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- TLS / SSL -->
+			<a class="skill-row has-link lvl-learning" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<!-- <span class="mono">S</span> -->
+						<img src="https://cdn.simpleicons.org/ssl/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+						<span class="material-symbols-outlined">
+						lock
+						</span>
+					</span>
+					<span class="sk-name">SSL / TLS</span>
+					<span class="sk-level">Learning</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="25" style="width: 65%;"></div>
+				</div>
+
+			</a>
+		</div>
+	  </div>
+	</div>
+
+	<!-- Hardware -->
+	<div class="skill-card reveal in">
+	  <div class="before-card reveal in" id="hardware">
+		<div class="head">
+			<span class="ic">
+				<span class="material-symbols-outlined">
+				memory
+				</span>
+			</span>
+			<h3>Hardware</h3>
+		</div>
+		<div class="skill-rows">
+
+			<!-- LTSPICE -->
+			<a class="skill-row has-link lvl-proficient" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">L</span>
+						<img src="https://cdn.simpleicons.org/ltspice/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">LTSpice</span>
+					<span class="sk-level">Proficent</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- Electronic -->
+			<a class="skill-row has-link lvl-proficient" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<!-- <span class="mono">E</span> -->
+						<span class="material-symbols-outlined">
+						memory
+						</span>
+					</span>
+					<span class="sk-name">Electronic</span>
+					<span class="sk-level">Proficient</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- Signal Processing -->
+			<a class="skill-row has-link lvl-proficient" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<!-- <span class="mono">S</span> -->
+						<span class="material-symbols-outlined">
+						radar
+						</span>
+					</span>
+					<span class="sk-name">Signal Processing</span>
+					<span class="sk-level">Proficient</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- Logic -->
+			<a class="skill-row has-link lvl-intermediate" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">S</span>
+					</span>
+					<span class="sk-name">Saleae Logic</span>
+					<span class="sk-level">Intermediate</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="50" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<!-- AutoCad -->
+			<a class="skill-row has-link lvl-learning" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">A</span>
+						<img src="https://cdn.simpleicons.org/autocad/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">AutoCad</span>
+					<span class="sk-level">Learning</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="25" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+
+		</div>
+	  </div>
+	</div>
+
+	<!-- Red Team -->
+	<div class="skill-card reveal in">
+	  <div class="before-card reveal in" id="redteam">
+
+		<div class="head">
+			<span class="ic">
+				<span class="material-symbols-outlined">
+				skull
+				</span>
+			</span>
+			<h3>Red teaming</h3>
+		</div>
+
+		<div class="skill-rows">
+			<a class="skill-row has-link lvl-proficient" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">B</span>
+						<img src="https://cdn.simpleicons.org/burpsuite/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">Burpsuite</span>
+					<span class="sk-level">Proficent</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<a class="skill-row has-link lvl-proficient" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">M</span>
+						<img src="https://cdn.simpleicons.org/metasploit/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">MetaSploit</span>
+					<span class="sk-level">Proficent</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<a class="skill-row has-link lvl-learning" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">B</span>
+						<img src="https://cdn.simpleicons.org/bloodhound/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">Bloodhound</span>
+					<span class="sk-level">Learning</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="25" style="width: 65%;"></div>
+				</div>
+
+			</a>
+		</div>
+	  </div>
+	</div>
+
+	<!-- Blue Teaming -->
+	<div class="skill-card reveal in">
+	  <div class="before-card reveal in" id="blueteam">
+		<div class="head">
+			<span class="ic">
+				<span class="material-symbols-outlined">
+				shield_lock
+				</span>
+			</span>
+			<h3>Blue teaming</h3>
+		</div>
+		<div class="skill-rows">
+			<a class="skill-row has-link lvl-proficient" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">W</span>
+						<img src="https://cdn.simpleicons.org/wireshark/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">Wireshark</span>
+					<span class="sk-level">Proficent</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<a class="skill-row has-link lvl-proficient" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">E</span>
+						<img src="https://cdn.simpleicons.org/elasticsearch/e6e9f0" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+					</span>
+					<span class="sk-name">Elastic Search / Kibana</span>
+					<span class="sk-level">Proficent</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<a class="skill-row has-link lvl-learning" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">R</span>
+					</span>
+					<span class="sk-name">Regshot / ProcMon</span>
+					<span class="sk-level">Learning</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="25" style="width: 65%;"></div>
+				</div>
+
+			</a>
+		</div>
+	  </div>
+	</div>
+
+	<!-- Reverse -->
+	<div class="skill-card reveal in">
+	  <div class="before-card reveal in" id="reverse">
+		<div class="head">
+			<span class="ic">
+				<span class="material-symbols-outlined">
+				repeat
+				</span>
+			</span>
+			<h3>Reverse</h3>
+		</div>
+		<div class="skill-rows">
+			<a class="skill-row has-link lvl-expert" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<!-- <span class="mono">G</span> -->
+						<span class="material-symbols-outlined">
+						frame_bug
+						</span>
+					</span>
+					<span class="sk-name">gdb</span>
+					<span class="sk-level">Proficent</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="65" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<a class="skill-row has-link lvl-learning" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<!-- <span class="mono">X</span> -->
+						<span class="material-symbols-outlined">
+						frame_bug
+						</span>
+					</span>
+					<span class="sk-name">x64dbg</span>
+					<span class="sk-level">Learning</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="25" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<a class="skill-row has-link lvl-learning" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<!-- <span class="mono">G</span> -->
+						<span class="material-symbols-outlined">
+						frame_bug
+						</span>
+					</span>
+					<span class="sk-name">Ghidra</span>
+					<span class="sk-level">Learning</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="25" style="width: 65%;"></div>
+				</div>
+
+			</a>
+		</div>
+	  </div>
+	</div>
+
+	<!-- Cryptography -->
+	<div class="skill-card reveal in">
+	  <div class="before-card reveal in" id="cryptography">
+		<div class="head">
+			<span class="ic">
+				<span class="material-symbols-outlined">
+				lock
+				</span>
+			</span>
+			<h3>Cryptography</h3>
+		</div>
+		<div class="skill-rows">
+			<a class="skill-row has-link lvl-proficient" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">R</span>
+					</span>
+					<span class="sk-name">RSA</span>
+					<span class="sk-level">Proficent</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="80" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+			<a class="skill-row has-link lvl-learning" href="#work"  rel="noopener">
+				<div class="sk-main">
+					<span class="sk-logo">
+						<span class="mono">O</span>
+					</span>
+					<span class="sk-name">OpenSSL</span>
+					<span class="sk-level">Learning</span>
+				</div>
+				<div class="skill-track">
+					<div class="skill-fill" data-w="35" style="width: 65%;"></div>
+				</div>
+
+			</a>
+
+		</div>
+	  </div>
+	</div>
+
+  </div>
+
+</section>
+
+<!-- ===================== ACHIEVEMENTS ===================== -->
+<section class="section wrap" id="work">
+  <div class="section-head reveal">
+    <span class="eyebrow"><span class="slashes">//</span>Projects</span>
+    <h2>Personnal Achievements & Personal Projects</h2>
+    <p>A selection of personal achievements</p>
+  </div>
+  <div class="projects-grid">
+	
+	<!-- UNITED CTF -->
+    <a class="proj reveal" rel="noopener">
+      <div class="top">
+        <span class="ic">
+		<span class="material-symbols-outlined">
+		deployed_code
+		</span>
+	</span>
+      </div>
+      <h3>United CTF 2025 & 2024 & 2023</h3>
+      <div class="lang">Multidisciplinary challenges in IT fields</div>
+      <p>Multi disciplinary computer science challenges, from network, osint, to binary reversing, web exploitation, misc, pwn and more ! <br> 33e in 2025</p>
+      <div class="tags"><span class="tag">crypto</span><span class="tag">misc</span><span class="tag">osint</span><span class="tag">programming</span><span class="tag">pwn</span><span class="tag">radio</span><span class="tag">reverse</span><span class="tag">steganography</span><span class="tag">trivia</span><span class="tag">web</span></div>
+    </a>
+
+	<!-- WORDPRESS MANAGER -->
+    <div class="proj reveal d2" href="https://github.com/Pandrah/mitm-tui" target="_blank" rel="noopener">
+      <div class="sk-logo">
+	<img src="https://cdn.simpleicons.org/wordpress/cyan" alt loading="lazy" draggable="false" onload="this.closest('.sk-logo').classList.add('imgok')" >
+      </div>
+      <h3>Wordpress manager</h3>
+      <div class="lang">Wordpress site administration</div>
+      <p>Hosting, content, site and media manager of a commercial wordpress site, explore : <br><a class="sk-level" href="https://belair-confections.fr">https://belair-confections.fr</a></p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">ARP</span><span class="tag">Red Teaming</span><span class="tag">Framework python Textual</span><span class="tag">Networking fingerprinting</span></div>
+    </div>
+
+	 <!-- C++ Fourier Transform -->
+    <a class="proj reveal" href="https://github.com/Pandrah/fft-c-custom" target="_blank" rel="noopener">
+      <div class="top">
+        <span class="ic">
+		<span class="material-symbols-outlined">
+		code_xml
+		</span>
+	</span>
+        <span class="ext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+      </div>
+      <h3>Custom Fourier Transformation for personnal use in C++</h3>
+      <div class="lang">C++ · Python · Signal Processing</div>
+      <p>Implementation of complex numbers and fourier transformation, operation on spectral level such as filters and inverse fourier transform. Creation of automated python script to display corresponding curves</p>
+      <div class="tags"><span class="tag">C++</span><span class="tag">Signal processing</span><span class="tag">Python</span><span class="tag">CMake</span></div>
+    </a>
+
+	 <!-- OverTheWire -->
+    <div class="proj reveal d2" >
+      <div class="sk-logo">
+	<span class="material-symbols-outlined" style="color: var(--cyan)">
+	browse_activity
+	</span>
+      </div>
+      <h3>OverTheWire</h3>
+      <div class="lang">Multidisciplinary challenges in IT fields</div>
+      <p>Bandit : 100% <br>
+      	 Natas : 100%  <br>
+	 Leviathan: <i>In progress</i>
+      </p>
+      <div class="tags"><span class="tag">Linux</span><span class="tag">Challenges solving</span><span class="tag">Network</span><span class="tag">Web Exploitation</span><span class="tag">Reverse engineering</span></div>
+    </div>
+
+	 <!-- MITM ARP TUI PYTHON APP -->
+    <a class="proj reveal d2" href="https://github.com/Pandrah/mitm-tui" target="_blank" rel="noopener">
+      <div class="top">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg></span>
+        <span class="ext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+      </div>
+      <h3>TUI mitm ARP attack manager</h3>
+      <div class="lang">Man in the middle arp attack manager on terminal application interface </div>
+      <p>Home made Terminal User Interface tool for IP and Ether host detection, mac fingerprinting and ARP attack manager, (Eductional purposes only !)</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">ARP</span><span class="tag">Red Teaming</span><span class="tag">Framework python Textual</span><span class="tag">Networking fingerprinting</span></div>
+    </a>
+
+	<!-- CTFs -->
+    <div class="proj reveal d2">
+      <div class="top">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg></span>
+      </div>
+      <h3>CTF</h3>
+      <div class="lang">Participation in CTFs and other cybersecurity challenges</div>
+      <p>Participation in Hack The Box, Try Hack Me CTF challenges</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">ARP</span><span class="tag">Red Teaming</span><span class="tag">Framework python Textual</span><span class="tag">Networking fingerprinting</span></div>
+    </div>
+
+	<!-- HTB Certification -->
+    <div class="proj reveal d2" href="https://github.com/Pandrah/mitm-tui" target="_blank" rel="noopener">
+      <div class="top">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg></span>
+        <span class="ext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+      </div>
+      <h3>HTB Certification</h3>
+      <div class="lang">Preparation on passing CJCA HTB Certification</div>
+      <p>Actively studying for Hack The Box Academy path CREST CCT INF Preparation</p>
+      <div class="tags">
+	      		<span class="tag">Network</span>
+			<span class="tag">Vulnerabilities</span>
+			<span class="tag">Web Exploit</span>
+			<span class="tag">Skill Assessments</span>
+			<span class="tag">OSINT</span>
+			<span class="tag">Password Attacks</span>
+			<span class="tag">Payload crafting</span>
+	</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WORK ===================== -->
+<section class="section wrap" id="work">
+  <div class="section-head reveal">
+    <span class="eyebrow"><span class="slashes">//</span>Projects</span>
+    <h2>What I've Built</h2>
+    <p>A selection of personal and academic projects, all open-source on GitHub.</p>
+  </div>
+  <div class="projects-grid">
+
+
+
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section class="section wrap" id="experience">
+  <div class="section-head reveal">
+    <span class="eyebrow"><span class="slashes">//</span>Experience</span>
+    <h2>Professional Experience</h2>
+    <p>Internships on software developpement with industrial quality standards</p>
+  </div>
+  <div class="exp-list">
+
+    <div class="exp reveal">
+      <span class="node"></span>
+      <div class="when">Feb 2025 → Aug 2025 · 6 months</div>
+      <div class="head"><h3>Software Developper <b>·</b> Architecture Designer <b>·</b> Intern</h3><span class="at">@</span><span class="org">Thales DMS Brest</span></div>
+      <p class="desc">In <strong>Archange</strong> team: creating processing data pipelines within API, from collecting & harvesting to <strong>Protobuff deserialization</strong>, data insertion and graphics & metrics exploitation with <strong>OpenSearch Stack</strong> deployed with Docker containers. Developping Golang backend, json data templates, and Vega widgets on visual opensearch dashboards</p>
+      <div class="tags">
+	      <span class="tag">Golang</span> 
+	      <span class="tag">OpenSearch (& dashboards)</span> 
+	      <span class="tag">Vega</span>                                            
+	      <span class="tag">Protobuff</span>         
+	      <span class="tag">Swagger</span>                 
+	      <span class="tag">Docker-compose</span>
+</div>
+    </div>
+
+    <div class="exp reveal">
+      <span class="node"></span>
+      <div class="when">Jun 2022 → Nov 2022 · 6 months</div>
+      <div class="head"><h3>Web Designer</h3><span class="at">@</span><span class="org">LaTIM</span></div>
+      <p class="desc">In the <strong>LaTIM</strong> web team, Creating a Web portal interface deployed in containers for deposit real time embedded physic simulations on large cluster. <strong>Frontend & Backend</strong> design in python, using framework Flask<strong></strong> <strong></strong>.</p>
+      <div class="tags">
+	      <span class="tag">Python</span>
+	      <span class="tag">Docker</span>
+	      <span class="tag">Flask</span>
+	      <span class="tag">HTML</span>
+	      <span class="tag">Javascript</span>
+	      <span class="tag">CSS</span>
+      </div>
+    </div>
+
+    <!--
+    <div class="exp reveal">
+      <span class="node"></span>
+      <div class="when">Jun 2022 → Dec 2022 · 5 months</div>
+      <div class="head"><h3>Software Intern · AI Assistants</h3><span class="at">@</span><span class="org">Genesys</span></div>
+      <p class="desc">On the <strong>Agent Assist</strong> team building on Google Agent Assist. Developed interactive web tools with <strong>Vue.js &amp; Node.js</strong> to visualise agent and chatbot interactions, designed dynamic <strong>Chart.js</strong> dashboards to evaluate suggestion quality and participed at the Genesys hackathon building a conversational AI with <strong>DialogFlow &amp; the OpenAI API</strong>.</p>
+      <div class="tags"><span class="tag">Vue.js</span><span class="tag">Node.js</span><span class="tag">Chart.js</span><span class="tag">DialogFlow</span><span class="tag">OpenAI API</span></div>
+    </div>
+    -->
+
+  </div>
+</section>
+
+<!-- ===================== EDUCATION ===================== -->
+<section class="section wrap" id="education">
+  <div class="section-head reveal">
+    <span class="eyebrow"><span class="slashes">//</span>Education</span>
+    <h2>Academic Background</h2>
+    <p>A double degree in Engineering & Cybersecurity, in France &amp; Québec.</p>
+  </div>
+  <div class="edu-grid">
+
+    <div class="edu reveal d2">
+      <div class="yr">2026</div>
+      <h3>Master's in Computer Science · Cybersecurity</h3>
+      <div class="school">Université du Québec à Chicoutimi (UQAC)</div>
+      <div class="note">// network, cryptography, vulnerables apps & exploitation</div>
+    </div>
+    <div class="edu reveal">
+      <div class="yr">2025</div>
+      <h3>Engineering Degree, with a specialty in Computer Science</h3>
+      <div class="school">École Nationale d'Ingénieur de Brest (ENIB)</div>
+      <div class="note">// Generalist engineering degree, specialized in computer sciences, tech, and IT fields</div>
+    </div>
+
+    <div class="edu reveal d3">
+      <div class="yr">2019</div>
+      <h3>Baccalauréat Scientifique</h3>
+      <div class="school">Lycée Amiral Ronarc'h, Brest</div>
+      <div class="note">// engineering science speciality</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="section wrap contact" id="contact">
+  <div class="contact-card reveal">
+    <span class="eyebrow"><span class="slashes">//</span>Contact</span>
+    <h2 style="margin-top:14px;">Let's build something.</h2>
+    <p>I'm looking for Cybersecurity, or software engineering opportunities. If you're hiring, or just get in touch.</p>
+    <div class="contact-actions">
+      <a class="btn btn-primary" href="mailto:alexandre.mevel.pro@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+        Email me
+      </a>
+      <a class="btn" href="https://github.com/Pandrah" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></svg>
+        GitHub
+      </a>
+      <a class="btn" href="https://www.linkedin.com/in/alexandre-mevel-22155a230/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.74v20.5C0 23.2.8 24 1.77 24h20.45c.98 0 1.78-.8 1.78-1.76V1.74C24 .78 23.2 0 22.22 0z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+    <div class="lang-row">
+      <span class="lang-pill"><b>French</b> <span class="lvl">native</span></span>
+      <span class="lang-pill"><b>English</b> <span class="lvl">C1 · TOEIC certified</span></span>
+      <span class="lang-pill"><b>Spanish</b> <span class="lvl">B1</span></span>
+      <span class="lang-pill"><b>Chinese</b> <span class="lvl">A1</span></span>
+      <span class="lang-pill"><b>Russian</b> <span class="lvl">A1</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#top" class="brand"><img src="icon.svg" class="nav-logo" alt="logo">Alexandre<span class="muted">.dev</span></a>
+      <p>Software engineer exploiting new systems everyday. Open to opportunities in 2026.</p>
+    </div>
+    <nav class="footer-social" aria-label="Social links">
+      <a class="social-btn" href="https://github.com/Pandrah" target="_blank" rel="noopener">
+	<img src="https://cdn.simpleicons.org/github/pink" alt loading="lazy" draggable="false">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></svg>
+        GitHub
+      </a>
+      <a class="social-btn" href="https://www.linkedin.com/in/Alexandre-Mevel-1a0192237" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.74v20.5C0 23.2.8 24 1.77 24h20.45c.98 0 1.78-.8 1.78-1.76V1.74C24 .78 23.2 0 22.22 0z"/></svg>
+        LinkedIn
+      </a>
+      <a class="social-btn" href="mailto:Alexandrelegouill@outlook.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+        Email
+      </a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Alexandre Mevel</span>
+    <a href="#top" class="to-top">Back to top
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="skills.js"></script>
+<script>
+  // arm reveal animations only when JS is available
+  document.documentElement.classList.add('reveal-on');
+
+  const nav = document.getElementById('nav');
+
+  // mobile menu
+  const toggle = document.getElementById('menuToggle');
+  toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  document.getElementById('navLinks').addEventListener('click', e => {
+    if (e.target.tagName === 'A') nav.classList.remove('open');
+  });
+
+  // --- scroll-driven UI (robust everywhere; no IntersectionObserver) ---
+  const reveals = [...document.querySelectorAll('.reveal')];
+  const skillCards = [...document.querySelectorAll('.skill-card')];
+  const links = [...document.querySelectorAll('.nav-links a')];
+  const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+
+  function fillSkills(card) {
+    if (card.dataset.filled) return;
+    card.dataset.filled = '1';
+    card.querySelectorAll('.skill-fill').forEach((f, i) => {
+      const target = f.dataset.w + '%';
+      // snap to empty without animating, then grow to target on a stagger
+      f.style.transition = 'none';
+      f.style.width = '0%';
+      void f.offsetWidth;
+      f.style.transition = '';
+      setTimeout(() => { f.style.width = target; }, 60 + i * 85);
+    });
+  }
+
+  let ticking = false;
+  function update() {
+    ticking = false;
+    const vh = window.innerHeight;
+
+    nav.classList.toggle('scrolled', window.scrollY > 24);
+
+    // reveal anything that has entered the lower 88% of the viewport
+    for (const el of reveals) {
+      if (el.classList.contains('in')) continue;
+      const r = el.getBoundingClientRect();
+      if (r.top < vh * 0.88 && r.bottom > 0) el.classList.add('in');
+    }
+
+    // animate skill bars when their card is in view
+    for (const card of skillCards) {
+      if (card.dataset.filled) continue;
+      const r = card.getBoundingClientRect();
+      if (r.top < vh * 0.8 && r.bottom > 0) fillSkills(card);
+    }
+
+    // active nav link = section crossing the upper third
+    let activeId = sections.length ? '#' + sections[0].id : null;
+    for (const s of sections) {
+      if (s.getBoundingClientRect().top <= vh * 0.35) activeId = '#' + s.id;
+    }
+    links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === activeId));
+  }
+  function onScroll() {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  window.addEventListener('load', update);
+  update();
+  // safety pass in case fonts/layout settle late
+  setTimeout(update, 300);
+</script>
+
+</body>
+</html>
